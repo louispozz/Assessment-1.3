@@ -24,19 +24,30 @@
         --c-cyan: rgb(42,161,152);
         --c-green: rgb(133,153,0);
       }
+
+	
+       body {
+        background-color: var(--c-background-color);
+        color: var(--base-font-color);
+		}
+        
+        header, footer {
+        background-color: var(--c-background-highlights);
+        color: var(--base-font-color);
+      }
+
+      main {
+        color: var(--base-font-color);
+      }
+	ul a {
+  color: var(--c-magenta);
+}
     </style>
-
-
-<style>
-background-color: rgb(0, 43, 54);
-
-
-</style>
 
   </head>
 
   <body>
-    <!-- Here is our main header that is used across all the pages of our website -->
+    
 
     <header>
       <h1>Header</h1>
@@ -58,10 +69,10 @@ background-color: rgb(0, 43, 54);
        </form>
      </nav>
 
-    <!-- Here is our page's main content -->
-    <main>
+   
+    <main style="color: rgb(131, 148, 150);">
 
-      <!-- It contains an article -->
+     
       <article>
         <h2>Article heading</h2>
 
@@ -95,11 +106,11 @@ background-color: rgb(0, 43, 54);
 
     </main>
 
-    <!-- And here is our main footer that is used across all the pages of our website -->
+  
 
     <footer>
-      <p>©Copyright 2050 by nobody. All rights reversed.</p>
+    	<p>©Copyright 2050 by nobody. All rights reversed.</p>
     </footer>
 
   </body>
-</html># Assessment-1.3
+</html>
