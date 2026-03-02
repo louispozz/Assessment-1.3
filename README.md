@@ -33,6 +33,8 @@
        body {
         background-color: var(--c-background-color);
         color: var(--base-font-color);
+        max-width:800px;
+        margin:0 auto;
 		}
         
         footer {
@@ -42,42 +44,71 @@
 
       main {
         color: var(--base-font-color);
+		  display: flex;
+  		  gap: 40px;
+ 		 padding: 20px;
 		}
 	h1 {
 	color: var(--c-yellow); }
 
+	article h2,
+article h3 {
+  padding-top: 50px;
+}
+
 	
-        
-ul a {
-  color: var(--c-magenta);
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;     
+  justify-content: space-around;
+  align-items: center;
+  gap: 24px;          
+}
+
+
+nav ul a,
+nav ul a:visited {
+  color: var(--c-blue);
   text-decoration: none;
 }
 
-ul a:hover {
+nav ul a:hover {
   color: var(--c-orange);
   text-decoration: underline;
 }
 
+aside {
+  color: var(--c-green);
+}
+
+aside a,
+aside a:visited {
+  color: var(--c-red);
+  text-decoration: none;
+}
+
+/* Aside links on hover */
+aside a:hover {
+  color: var(--c-blue);
+  text-decoration: underline;
+}
 article section {
   border: 3px solid var(--c-cyan);
   padding: 12px; 
   margin-bottom: 16px; 
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;   
-  margin: 0;
-}
-
 nav {
   width: 100%;
+  padding: 20px 0;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+nav form {
+  margin-top: 15px;  
+}
 
   display: flex;
   justify-content: center;
